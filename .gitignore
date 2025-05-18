@@ -1,0 +1,10 @@
+# IDE settings
+.vscode/
+
+# Node.js modules
+frontend/node_modules/
+backend/node_modules/
+
+# Build outputs
+frontend/.next/
+compiler/build/

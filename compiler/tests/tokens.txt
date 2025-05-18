@@ -1,0 +1,6 @@
+SEPARATOR -> {
+STRING -> code
+OPERATOR -> :
+STRING -> // Write your pseudocode here...
+SEPARATOR -> }
+END_OF_FILE -> EOF
