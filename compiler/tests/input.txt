@@ -1,1 +1,15 @@
-{"code":"// Write your pseudocode here..."}
+START
+num=121
+rev=0
+temp=num
+WHILE num>0 DO
+  rem=num%10
+  rev=rev*10+ rem
+  num=num/10
+ENDWHILE
+IF rev==temp THEN 
+  PRINT "Palindrome Number"
+ELSE 
+  PRINT "Not Palindrome Number"
+ENDIF
+END

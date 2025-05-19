@@ -1,10 +1,13 @@
+// app/page.tsx
+'use client';
+
 import React, { useState, useEffect, useRef } from "react";
 import MonacoEditor from "../components/Editor";
 
 export default function Home() {
   const [code, setCode] = useState("// Write your pseudocode here...");
   const [output, setOutput] = useState("");
-  const ws = useRef(null);
+  const ws = useRef<WebSocket | null>(null);
 
   useEffect(() => {
     ws.current = new WebSocket("ws://localhost:8080");
@@ -32,7 +35,7 @@ export default function Home() {
   const runCode = () => {
     setOutput("");
     if (ws.current && ws.current.readyState === WebSocket.OPEN) {
-      ws.current.send(JSON.stringify({ code }));
+      ws.current.send(code);
     } else {
       console.error("WebSocket is not ready.");
     }
@@ -43,10 +46,9 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-6 text-center">🧠 Pseudocode IDE</h1>
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
-        {/* Left: Code Editor (60%) */}
+        {/* Left: Code Editor */}
         <div className="md:w-3/5 w-full space-y-4">
           <MonacoEditor code={code} setCode={setCode} />
-
           <div className="flex justify-end">
             <button
               onClick={runCode}
@@ -57,7 +59,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right: Output Console (40%) */}
+        {/* Right: Output Console */}
         <div className="md:w-2/5 w-full bg-gray-900 rounded-xl p-4 shadow-inner h-[460px] overflow-y-auto">
           <h2 className="text-xl font-semibold mb-2">📤 Output:</h2>
           <pre className="whitespace-pre-wrap text-green-400 text-sm">
