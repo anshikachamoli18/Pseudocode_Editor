@@ -1,0 +1,10 @@
+^D:\FINAL PBL PROJECTS\ONLINE_PSEUDO_CODE_EDITOR\COMPILER\BUILD\CMAKEFILES\A2A64B0F5496896B80F0854F1B384780\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler" "-BD:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/pseudocode_compiler.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

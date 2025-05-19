@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\lexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\semantic_analyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\ir_generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\ir_optimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\src\ir_interpreter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Final PBL Projects\Online_Pseudo_Code_Editor\compiler\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2B9971D1-C7EA-3ACB-94DA-9C84CC114BA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

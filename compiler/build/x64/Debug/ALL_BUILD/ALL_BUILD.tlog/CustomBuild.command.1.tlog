@@ -1,0 +1,10 @@
+^D:\FINAL PBL PROJECTS\ONLINE_PSEUDO_CODE_EDITOR\COMPILER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler" "-BD:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build" --check-stamp-file "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

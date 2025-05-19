@@ -7,4 +7,3 @@ backend/node_modules/
 
 # Build outputs
 frontend/.next/
-compiler/build/
