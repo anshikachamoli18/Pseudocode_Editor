@@ -4,7 +4,8 @@
 #include <regex>
 #include <sstream>
 #include <algorithm>
-
+#include <chrono>
+#include <thread>
 using namespace std;
 
 vector<string> IRInterpreter::readIR(const string& path) {
@@ -104,11 +105,22 @@ void IRInterpreter::executeLine(const string& line) {
         }
     }
     else if (regex_match(line, m, regex(R"(^READ\s+(\w+)$)"))) {
-        emitJSON("input", "prompt", m[1]);
-        string inputVal;
-        getline(cin, inputVal);
-        callStack.top().variables[m[1]] = stoi(inputVal);
+    string varName = m[1];
+    emitJSON("input", "prompt", "Enter value for " + varName + ":");
+
+    string inputVal;
+    while (true) {
+        ifstream in("../../tests/input_queue.txt");
+        if (in) {
+            getline(in, inputVal);
+            if (!inputVal.empty()) break;
+        }
+        this_thread::sleep_for(chrono::milliseconds(100));
     }
+    // Clear file
+    ofstream clear("../../tests/input_queue.txt", ios::trunc);
+    callStack.top().variables[varName] = stoi(inputVal);
+}
     else if (regex_match(line, m, regex(R"(^IF\s+NOT\s+(\w+)\s+GOTO\s+(\w+)$)"))) {
         int cond = evaluateOperand(m[1]);
         if (!cond) jumpToLabel(m[2]);

@@ -1,15 +1,7 @@
 START
-num=121
-rev=0
-temp=num
-WHILE num>0 DO
-  rem=num%10
-  rev=rev*10+ rem
-  num=num/10
+READ x
+WHILE x < 50 DO
+  x = x + 1
+  PRINT x
 ENDWHILE
-IF rev==temp THEN 
-  PRINT "Palindrome Number"
-ELSE 
-  PRINT "Not Palindrome Number"
-ENDIF
 END

@@ -1,5 +1,7 @@
+// PATCH: Updated server.js to support interactive input
+
 const { WebSocketServer } = require('ws');
-const { runCompilerLocally } = require('./localRunner');
+const { startCompilerWithIO, sendInputToCompiler } = require('./localRunner');
 
 const wss = new WebSocketServer({ port: 8080 });
 
@@ -7,14 +9,18 @@ wss.on('connection', (ws) => {
   console.log("✅ Client connected");
 
   ws.on('message', async (message) => {
-    console.log("📩 Received message from client:", message.toString());
-
     try {
-      console.log("Inside try");
-      const output = await runCompilerLocally(message.toString());
-      ws.send(output);
-    } catch (err) {
-      ws.send(`[ERROR] ${err}`);
+      const parsed = JSON.parse(message);
+      if (parsed.type === 'input') {
+        sendInputToCompiler(parsed.value);
+      }
+    } catch {
+      // Not JSON => treat as code
+      startCompilerWithIO(
+        message.toString(),
+        (msg) => ws.send(JSON.stringify({ type: 'output', message: msg })),
+        (prompt) => ws.send(JSON.stringify({ type: 'input', prompt }))
+      );
     }
   });
 

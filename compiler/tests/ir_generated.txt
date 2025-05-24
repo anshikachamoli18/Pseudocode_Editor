@@ -1,22 +1,9 @@
-num = 121
-rev = 0
-temp = num
+READ x
 L0:
-t2 = num > 0
+t2 = x < 50
 IF NOT t2 GOTO L1
-t3 = num % 10
-rem = t3
-t4 = rev * 10
-t5 = t4 + rem
-rev = t5
-t6 = num / 10
-num = t6
+t3 = x + 1
+x = t3
+PRINT x
 GOTO L0
 L1:
-t9 = rev == temp
-IF NOT t9 GOTO L8
-PRINT "Palindrome Number"
-GOTO L7
-L8:
-PRINT "Not Palindrome Number"
-L7:

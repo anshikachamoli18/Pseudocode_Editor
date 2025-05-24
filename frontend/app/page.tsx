@@ -1,4 +1,4 @@
-// app/page.tsx
+// Updated page.tsx
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -7,6 +7,9 @@ import MonacoEditor from "../components/Editor";
 export default function Home() {
   const [code, setCode] = useState("// Write your pseudocode here...");
   const [output, setOutput] = useState("");
+  const [waitingForInput, setWaitingForInput] = useState(false);
+  const [inputPrompt, setInputPrompt] = useState("");
+  const [userInput, setUserInput] = useState("");
   const ws = useRef<WebSocket | null>(null);
 
   useEffect(() => {
@@ -19,6 +22,9 @@ export default function Home() {
         const parsed = JSON.parse(event.data);
         if (parsed.type === "output") {
           setOutput((prev) => prev + parsed.message + "\n");
+        } else if (parsed.type === "input") {
+          setInputPrompt(parsed.prompt);
+          setWaitingForInput(true);
         }
       } catch {
         console.warn("📦 Non-JSON output:", event.data);
@@ -38,6 +44,14 @@ export default function Home() {
       ws.current.send(code);
     } else {
       console.error("WebSocket is not ready.");
+    }
+  };
+
+  const sendInput = () => {
+    if (ws.current && ws.current.readyState === WebSocket.OPEN) {
+      ws.current.send(JSON.stringify({ type: "input", value: userInput }));
+      setUserInput("");
+      setWaitingForInput(false);
     }
   };
 
@@ -65,6 +79,20 @@ export default function Home() {
           <pre className="whitespace-pre-wrap text-green-400 text-sm">
             {output || "// Output will appear here..."}
           </pre>
+          {waitingForInput && (
+            <div className="mt-4">
+              <label className="block mb-1 text-sm">{inputPrompt}</label>
+              <input
+                type="text"
+                value={userInput}
+                onChange={(e) => setUserInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") sendInput();
+                }}
+                className="w-full p-2 bg-gray-800 text-white border border-gray-600 rounded"
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

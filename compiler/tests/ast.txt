@@ -1,41 +1,13 @@
 Program: 
-  Assignment: =
-    Variable: num
-    Number: 121
-  Assignment: =
-    Variable: rev
-    Number: 0
-  Assignment: =
-    Variable: temp
-    Variable: num
+  InputStatement: x
   LoopStatement: WHILE
-    RelationalOperator: >
-      Variable: num
-      Number: 0
+    RelationalOperator: <
+      Variable: x
+      Number: 50
     Assignment: =
-      Variable: rem
-      Operator: %
-        Variable: num
-        Number: 10
-    Assignment: =
-      Variable: rev
+      Variable: x
       Operator: +
-        Operator: *
-          Variable: rev
-          Number: 10
-        Variable: rem
-    Assignment: =
-      Variable: num
-      Operator: /
-        Variable: num
-        Number: 10
-  IfStatement: IF
-    IfConditionBlock: ConditionBlock
-      RelationalOperator: ==
-        Variable: rev
-        Variable: temp
-      PrintStatement: PRINT
-        StringLiteral: Palindrome Number
-    ElseBlock: ELSE
-      PrintStatement: PRINT
-        StringLiteral: Not Palindrome Number
+        Variable: x
+        Number: 1
+    PrintStatement: PRINT
+      Variable: x

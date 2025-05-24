@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.4.1+9a89d02ff for .NET Framework
-      Build started 17-05-2025 17:10:09.
+      Build started 24-05-2025 16:51:39.
       Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -50,7 +50,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.78
+      Time Elapsed 00:00:01.15
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -76,7 +76,7 @@ events:
       The output was:
       0
       MSBuild version 17.4.1+9a89d02ff for .NET Framework
-      Build started 17-05-2025 17:10:10.
+      Build started 24-05-2025 16:51:40.
       Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -102,7 +102,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.65
+      Time Elapsed 00:00:00.81
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -121,8 +121,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-h12ace"
-      binary: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-h12ace"
+      source: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-yjd02j"
+      binary: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-yjd02j"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -131,37 +131,37 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-h12ace'
+        Change Dir: 'D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-yjd02j'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_284af.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4bb85.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.4.1+9a89d02ff for .NET Framework
-        Build started 17-05-2025 17:10:11.
-        Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h12ace\\cmTC_284af.vcxproj" on node 1 (default targets).
+        Build started 24-05-2025 16:51:43.
+        Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjd02j\\cmTC_4bb85.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_284af.dir\\Debug\\".
-          Creating directory "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h12ace\\Debug\\".
-          Creating directory "cmTC_284af.dir\\Debug\\cmTC_284af.tlog\\".
+          Creating directory "cmTC_4bb85.dir\\Debug\\".
+          Creating directory "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjd02j\\Debug\\".
+          Creating directory "cmTC_4bb85.dir\\Debug\\cmTC_4bb85.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_284af.dir\\Debug\\cmTC_284af.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_4bb85.dir\\Debug\\cmTC_4bb85.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_284af.dir\\Debug\\\\" /Fd"cmTC_284af.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4bb85.dir\\Debug\\\\" /Fd"cmTC_4bb85.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31937 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_284af.dir\\Debug\\\\" /Fd"cmTC_284af.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4bb85.dir\\Debug\\\\" /Fd"cmTC_4bb85.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h12ace\\Debug\\cmTC_284af.exe" /INCREMENTAL /ILK:"cmTC_284af.dir\\Debug\\cmTC_284af.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-h12ace/Debug/cmTC_284af.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-h12ace/Debug/cmTC_284af.lib" /MACHINE:X64  /machine:x64 cmTC_284af.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_284af.vcxproj -> D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h12ace\\Debug\\cmTC_284af.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjd02j\\Debug\\cmTC_4bb85.exe" /INCREMENTAL /ILK:"cmTC_4bb85.dir\\Debug\\cmTC_4bb85.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-yjd02j/Debug/cmTC_4bb85.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-yjd02j/Debug/cmTC_4bb85.lib" /MACHINE:X64  /machine:x64 cmTC_4bb85.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_4bb85.vcxproj -> D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjd02j\\Debug\\cmTC_4bb85.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_284af.dir\\Debug\\cmTC_284af.tlog\\unsuccessfulbuild".
-          Touching "cmTC_284af.dir\\Debug\\cmTC_284af.tlog\\cmTC_284af.lastbuildstate".
-        Done Building Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h12ace\\cmTC_284af.vcxproj" (default targets).
+          Deleting file "cmTC_4bb85.dir\\Debug\\cmTC_4bb85.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4bb85.dir\\Debug\\cmTC_4bb85.tlog\\cmTC_4bb85.lastbuildstate".
+        Done Building Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjd02j\\cmTC_4bb85.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.62
+        Time Elapsed 00:00:00.70
         
       exitCode: 0
   -
@@ -201,8 +201,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-t6oebl"
-      binary: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-t6oebl"
+      source: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-ee6xla"
+      binary: "D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-ee6xla"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -212,37 +212,37 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-t6oebl'
+        Change Dir: 'D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-ee6xla'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f256a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f6ec0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.4.1+9a89d02ff for .NET Framework
-        Build started 17-05-2025 17:10:13.
-        Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t6oebl\\cmTC_f256a.vcxproj" on node 1 (default targets).
+        Build started 24-05-2025 16:51:44.
+        Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ee6xla\\cmTC_f6ec0.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f256a.dir\\Debug\\".
-          Creating directory "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t6oebl\\Debug\\".
-          Creating directory "cmTC_f256a.dir\\Debug\\cmTC_f256a.tlog\\".
+          Creating directory "cmTC_f6ec0.dir\\Debug\\".
+          Creating directory "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ee6xla\\Debug\\".
+          Creating directory "cmTC_f6ec0.dir\\Debug\\cmTC_f6ec0.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f256a.dir\\Debug\\cmTC_f256a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_f6ec0.dir\\Debug\\cmTC_f6ec0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f256a.dir\\Debug\\\\" /Fd"cmTC_f256a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f6ec0.dir\\Debug\\\\" /Fd"cmTC_f6ec0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31937 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f256a.dir\\Debug\\\\" /Fd"cmTC_f256a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f6ec0.dir\\Debug\\\\" /Fd"cmTC_f6ec0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t6oebl\\Debug\\cmTC_f256a.exe" /INCREMENTAL /ILK:"cmTC_f256a.dir\\Debug\\cmTC_f256a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-t6oebl/Debug/cmTC_f256a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-t6oebl/Debug/cmTC_f256a.lib" /MACHINE:X64  /machine:x64 cmTC_f256a.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_f256a.vcxproj -> D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t6oebl\\Debug\\cmTC_f256a.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ee6xla\\Debug\\cmTC_f6ec0.exe" /INCREMENTAL /ILK:"cmTC_f6ec0.dir\\Debug\\cmTC_f6ec0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-ee6xla/Debug/cmTC_f6ec0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Final PBL Projects/Online_Pseudo_Code_Editor/compiler/build/CMakeFiles/CMakeScratch/TryCompile-ee6xla/Debug/cmTC_f6ec0.lib" /MACHINE:X64  /machine:x64 cmTC_f6ec0.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_f6ec0.vcxproj -> D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ee6xla\\Debug\\cmTC_f6ec0.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_f256a.dir\\Debug\\cmTC_f256a.tlog\\unsuccessfulbuild".
-          Touching "cmTC_f256a.dir\\Debug\\cmTC_f256a.tlog\\cmTC_f256a.lastbuildstate".
-        Done Building Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t6oebl\\cmTC_f256a.vcxproj" (default targets).
+          Deleting file "cmTC_f6ec0.dir\\Debug\\cmTC_f6ec0.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f6ec0.dir\\Debug\\cmTC_f6ec0.tlog\\cmTC_f6ec0.lastbuildstate".
+        Done Building Project "D:\\Final PBL Projects\\Online_Pseudo_Code_Editor\\compiler\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ee6xla\\cmTC_f6ec0.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.55
+        Time Elapsed 00:00:00.74
         
       exitCode: 0
   -
