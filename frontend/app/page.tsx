@@ -8,7 +8,7 @@ export default function Home() {
   const [code, setCode] = useState("// Write your pseudocode here...");
   const [output, setOutput] = useState("");
   const [waitingForInput, setWaitingForInput] = useState(false);
-  const [inputPrompt, setInputPrompt] = useState("");
+  const [inputPrompt, setInputPrompt] = useState("");//for dynamic input
   const [userInput, setUserInput] = useState("");
   const ws = useRef<WebSocket | null>(null);
 
