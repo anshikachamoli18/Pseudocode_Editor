@@ -1,5 +1,3 @@
-// PATCH: Updated server.js to support interactive input
-
 const { WebSocketServer } = require('ws');
 const { startCompilerWithIO, sendInputToCompiler } = require('./localRunner');
 

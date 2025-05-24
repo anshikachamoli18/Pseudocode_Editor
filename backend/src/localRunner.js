@@ -1,5 +1,3 @@
-// PATCH: Updated localRunner.js to support interactive input
-
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
