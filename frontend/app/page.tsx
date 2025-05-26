@@ -1,4 +1,3 @@
-// Updated page.tsx
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -56,45 +55,71 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white px-6 py-8 font-mono">
-      <h1 className="text-3xl font-bold mb-6 text-center">🧠 Pseudocode IDE</h1>
+    <div className="min-h-screen bg-gray-950 text-white font-mono">
+      {/* Header */}
+      <header className="px-6 py-4 border-b border-gray-700 bg-gray-900">
+        <h1 className="text-10xl font-bold flex items-center gap-3">
+          <span>Welcome to PseudoX : Pseudocode Execution Platform</span>
+        </h1>
+      </header>
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
-        {/* Left: Code Editor */}
-        <div className="md:w-3/5 w-full space-y-4">
-          <MonacoEditor code={code} setCode={setCode} />
-          <div className="flex justify-end">
-            <button
-              onClick={runCode}
-              className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md transition"
-            >
-              ▶️ Run
-            </button>
-          </div>
-        </div>
-
-        {/* Right: Output Console */}
-        <div className="md:w-2/5 w-full bg-gray-900 rounded-xl p-4 shadow-inner h-[460px] overflow-y-auto">
-          <h2 className="text-xl font-semibold mb-2">📤 Output:</h2>
-          <pre className="whitespace-pre-wrap text-green-400 text-sm">
-            {output || "// Output will appear here..."}
-          </pre>
-          {waitingForInput && (
-            <div className="mt-4">
-              <label className="block mb-1 text-sm">{inputPrompt}</label>
-              <input
-                type="text"
-                value={userInput}
-                onChange={(e) => setUserInput(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") sendInput();
-                }}
-                className="w-full p-2 bg-gray-800 text-white border border-gray-600 rounded"
-              />
-            </div>
-          )}
-        </div>
-      </div>
+      <div className="flex h-[calc(100vh)] px-2 gap-4">
+  {/* Editor Section */}
+  <div className="flex-1 flex flex-col border border-gray-700 rounded-lg overflow-hidden">
+    <div className="p-2 bg-gray-900 flex items-center justify-between border-b border-gray-700">
+      <span className="text-sm text-gray-300 ml-2">EDITOR</span>
+      <button
+        onClick={runCode}
+        className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-1.5 rounded-md 
+                 text-sm font-medium mr-2 transition-colors border border-blue-400
+                 flex items-center gap-2 shadow-md"
+      >
+        <span>▶ Run</span>
+        <kbd className="text-xs px-1.5 py-0.5 bg-gray-800 rounded border border-gray-600">⌘⏎</kbd>
+      </button>
     </div>
+    <div className="flex-1 overflow-hidden">
+      <MonacoEditor code={code} setCode={setCode} className="h-full" />
+    </div>
+  </div>
+
+  {/* Output Section */}
+<div className="flex-1 flex flex-col border border-gray-700 rounded-lg overflow-hidden">
+  <div className="p-2 bg-gray-900 border-b border-gray-700 flex items-center">
+    <h2 className="text-sm text-gray-300 ml-2">OUTPUT</h2>
+  </div>
+
+  {waitingForInput && (
+    <div className="p-4 border-b border-gray-700 bg-gray-800/50">
+      <div className="flex items-center gap-2 mb-2 text-sm">
+        <span className="text-yellow-400">↳</span>
+        <label className="text-gray-300">{inputPrompt}</label>
+      </div>
+      <input
+        type="text"
+        value={userInput}
+        onChange={(e) => setUserInput(e.target.value)}
+        onKeyDown={(e) => e.key === 'Enter' && sendInput()}
+        className="w-full px-3 py-2 bg-gray-900 text-gray-100 rounded 
+                 border border-gray-600 focus:border-blue-500 focus:ring-1 
+                 focus:ring-blue-500 outline-none transition-all text-sm"
+        placeholder="Enter input..."
+      />
+    </div>
+  )}
+
+  <pre className="flex-1 p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
+    <code className="whitespace-pre-wrap text-green-400 font-mono text-sm leading-relaxed">
+      {output || (
+        <span className="text-gray-400 italic">
+          // Output will appear here after execution...
+        </span>
+      )}
+    </code>
+  </pre>
+</div>
+
+</div>
+</div>
   );
 }

@@ -1,12 +1,11 @@
-// components/Editor.jsx
 import { Editor } from "@monaco-editor/react";
 import React from "react";
 
-export default function MonacoEditor({ code, setCode }) {
+export default function MonacoEditor({ code, setCode,className }) {
   return (
-    <div className="rounded-xl overflow-hidden shadow-md border border-gray-700">
+    <div className={className}>
       <Editor
-        height="400px"
+        height="100vh"
         defaultLanguage="plaintext"
         value={code}
         onChange={(value) => setCode(value || "")}

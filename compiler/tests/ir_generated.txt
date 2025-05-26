@@ -1,9 +1,8 @@
 READ x
-L0:
-t2 = x < 50
+t2 = x > 10
 IF NOT t2 GOTO L1
-t3 = x + 1
-x = t3
-PRINT x
+PRINT "Greater"
 GOTO L0
 L1:
+PRINT "Smaller"
+L0:

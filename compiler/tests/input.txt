@@ -1,7 +1,8 @@
 START
 READ x
-WHILE x < 50 DO
-  x = x + 1
-  PRINT x
-ENDWHILE
+IF x > 10 THEN
+  PRINT "Greater"
+ELSE
+  PRINT "Smaller"
+ENDIF
 END
