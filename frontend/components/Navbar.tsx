@@ -29,7 +29,7 @@ export default function Navbar() {
 
       <header className="navbar">
         <h1>
-          🚀 PseudoX: <span>Pseudocode Execution Platform</span>
+          🚀 PseudoX: Pseudocode Execution Platform
         </h1>
       </header>
     </>

@@ -66,7 +66,6 @@ export default function Home() {
               <span>📝 Editor</span>
               <button className="run-button" onClick={runCode}>
                 <span>▶ Run</span>
-                <kbd>⌘⏎</kbd>
               </button>
             </div>
             <div className="editor-content">
@@ -166,7 +165,7 @@ export default function Home() {
 
           .editor-header span,
           .output-header h2 {
-            font-size: 0.875rem;
+            font-size: 20px;
             font-weight: 600;
             margin-left: 0.5rem;
           }
