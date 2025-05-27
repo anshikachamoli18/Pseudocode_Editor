@@ -1,12 +1,13 @@
 Program: 
   InputStatement: x
-  IfStatement: IF
-    IfConditionBlock: ConditionBlock
-      RelationalOperator: >
+  LoopStatement: WHILE
+    RelationalOperator: <
+      Variable: x
+      Number: 10
+    PrintStatement: PRINT
+      Variable: x
+    Assignment: =
+      Variable: x
+      Operator: +
         Variable: x
-        Number: 10
-      PrintStatement: PRINT
-        StringLiteral: Greater
-    ElseBlock: ELSE
-      PrintStatement: PRINT
-        StringLiteral: Smaller
+        Number: 1

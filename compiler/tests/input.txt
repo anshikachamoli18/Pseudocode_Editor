@@ -1,8 +1,7 @@
 START
 READ x
-IF x > 10 THEN
-  PRINT "Greater"
-ELSE
-  PRINT "Smaller"
-ENDIF
+WHILE x <10 DO
+PRINT x
+x=x+1
+ENDWHILE 
 END

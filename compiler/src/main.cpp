@@ -1,6 +1,6 @@
 #include "../include/lexer.h"
 #include "../include/parser.h"
-#include "semantic_analyzer.h"
+#include "../include/semantic_analyzer.h"
 #include <iostream>
 #include <string>
 #include <vector>
