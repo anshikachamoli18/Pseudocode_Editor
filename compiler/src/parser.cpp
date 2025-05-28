@@ -21,7 +21,7 @@ std::unique_ptr<ASTNode> Parser::parse() {
     auto root = std::make_unique<ASTNode>("Program", "");
 
     if (currentToken().value == "START") {
-        advance();  // Skip "START"
+        advance(); 
     }
 
     while (currentToken().type != TokenType::END_OF_FILE && currentToken().value != "END") {
@@ -35,7 +35,7 @@ std::unique_ptr<ASTNode> Parser::parse() {
     }
 
     if (currentToken().value == "END") {
-        advance(); // Good
+        advance(); 
     } else if (currentToken().type != TokenType::END_OF_FILE) {
         std::cerr << "Error: Missing 'END' keyword.\n";
     }
@@ -286,7 +286,6 @@ std::unique_ptr<ASTNode> Parser::parseIfStatement() {
         ifNode->children.push_back(std::move(elseBlock));
     }
 
-    // Expect ENDIF
     expect("ENDIF");
 
     return ifNode;
@@ -410,14 +409,14 @@ std::unique_ptr<ASTNode> Parser::parseFunctionDeclaration() {
         }
     }
 
-    expect("ENDFUNCTION");  // Ensure function properly ends
+    expect("ENDFUNCTION");  
     return funcNode;
 }
 
 
 
 std::unique_ptr<ASTNode> Parser::parseStructDeclaration() {
-    advance(); // Move past "STRUCT"
+    advance(); 
 
     if (currentToken().type == TokenType::IDENTIFIER) {
         auto structNode = std::make_unique<ASTNode>("StructDeclaration", currentToken().value);

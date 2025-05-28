@@ -76,7 +76,6 @@ int main() {
     optimizer.optimize(irPath.string(), optIrPath.string());
 
     // IR Interpretation - output written to output.txt
-    //ofstream execOutput(finalOutputPath);
     IRInterpreter executor;
     executor.interpret(optIrPath.string());
 

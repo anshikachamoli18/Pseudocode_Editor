@@ -1,13 +1,37 @@
 Program: 
   InputStatement: x
+  Assignment: =
+    Variable: temp
+    Variable: x
+  Assignment: =
+    Variable: rev
+    Number: 0
   LoopStatement: WHILE
-    RelationalOperator: <
+    RelationalOperator: >
       Variable: x
-      Number: 10
-    PrintStatement: PRINT
-      Variable: x
+      Number: 0
+    Assignment: =
+      Variable: rem
+      Operator: %
+        Variable: x
+        Number: 10
+    Assignment: =
+      Variable: rev
+      Operator: +
+        Operator: *
+          Variable: rev
+          Number: 10
+        Variable: rem
     Assignment: =
       Variable: x
-      Operator: +
+      Operator: /
         Variable: x
-        Number: 1
+        Number: 10
+  PrintStatement: PRINT
+    StringLiteral: Given number is 
+  PrintStatement: PRINT
+    Variable: temp
+  PrintStatement: PRINT
+    StringLiteral: Reverse of given number is 
+  PrintStatement: PRINT
+    Variable: rev

@@ -15,11 +15,11 @@ private:
     Token currentToken();
     void advance();
     void expect(const std::string& expectedValue);
-    Token peek();              // NEW: Look ahead to next token
-    Token previousToken();     // NEW: Look back to previous token
+    Token peek();              // Look ahead to next token
+    Token previousToken();     // Look back to previous token
 
     // Helper for IF/ELSE-IF logic
-    void parseConditionAndBlock(std::unique_ptr<ASTNode>& ifNode); // NEW
+    void parseConditionAndBlock(std::unique_ptr<ASTNode>& ifNode);
 
     // Parsers for different constructs
     std::unique_ptr<ASTNode> parseStatement();
@@ -44,4 +44,4 @@ public:
     std::unique_ptr<ASTNode> parse();
 };
 
-#endif // PARSER_H
+#endif 

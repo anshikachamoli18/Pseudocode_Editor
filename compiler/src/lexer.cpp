@@ -75,7 +75,7 @@ Token Lexer::getIdentifier() {
     }
 
     if (keywords.count(id)) {
-        return {keywords[id], id}; // Fixed: return directly from keyword map
+        return {keywords[id], id}; 
     }
 
     return {TokenType::IDENTIFIER, id};
@@ -86,12 +86,12 @@ Token Lexer::getOperator() {
 
     if (currentChar == '=') {  
         advance();
-        if (currentChar == '=') {  // Check for '=='
+        if (currentChar == '=') {  
             op += currentChar;
             advance();
-            return {TokenType::OPERATOR, op};  // "=="
+            return {TokenType::OPERATOR, op};  
         }
-        return {TokenType::ASSIGNMENT, "="};  // Single '=' is assignment
+        return {TokenType::ASSIGNMENT, "="};  
     }
 
     if (currentChar == '!' || currentChar == '<' || currentChar == '>') {
@@ -112,7 +112,7 @@ Token Lexer::getOperator() {
 
 Token Lexer::getSeparator() {
     string separator(1, currentChar);
-    advance(); // Move to next character
+    advance(); 
 
     return {TokenType::SEPARATOR, separator};
 }
@@ -141,7 +141,6 @@ vector<Token> Lexer::tokenize() {
             continue;
         }
 
-        // Recognize separators
         if (currentChar == ',' || currentChar == ';' || currentChar == '(' || currentChar == ')' ||
             currentChar == '{' || currentChar == '}' || currentChar == '[' || currentChar == ']') {
             tokens.push_back(getSeparator());

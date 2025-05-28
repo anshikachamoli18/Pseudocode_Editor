@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     ws.current = new WebSocket("ws://localhost:8080");
 
-    ws.current.onopen = () => console.log("✅ WebSocket connected");
+    ws.current.onopen = () => console.log("WebSocket connected");
 
     ws.current.onmessage = (event) => {
       try {
@@ -26,7 +26,7 @@ export default function Home() {
           setWaitingForInput(true);
         }
       } catch {
-        console.warn("📦 Non-JSON output:", event.data);
+        console.warn("Non-JSON output:", event.data);
         setOutput((prev) => prev + event.data + "\n");
       }
     };
@@ -60,7 +60,6 @@ export default function Home() {
         <Navbar />
 
         <div className="main-container">
-          {/* Editor Section */}
           <div className="editor-box">
             <div className="editor-header">
               <span>📝 Editor</span>
@@ -73,7 +72,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Output Section */}
           <div className="output-box">
             <div className="output-header">
               <h2>📤 Output</h2>
@@ -109,7 +107,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 🎨 Internal CSS */}
       <style>
         {`
           .home-root {

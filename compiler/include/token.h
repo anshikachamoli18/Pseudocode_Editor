@@ -22,7 +22,7 @@ inline string tokenTypeToString(TokenType type) {
         case TokenType::STRING: return "STRING";
         case TokenType::OPERATOR: return "OPERATOR";
         case TokenType::PUNCTUATION: return "PUNCTUATION";
-        case TokenType::SEPARATOR: return "SEPARATOR"; // NEW ADDITION
+        case TokenType::SEPARATOR: return "SEPARATOR"; 
         case TokenType::ASSIGNMENT: return "ASSIGNMENT";
         case TokenType::END_OF_FILE: return "END_OF_FILE";
         case TokenType::INVALID: return "INVALID";
@@ -41,4 +41,4 @@ struct Token {
     string value;
 };
 
-#endif // TOKEN_H
+#endif 

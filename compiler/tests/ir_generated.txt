@@ -1,9 +1,19 @@
 READ x
+temp = x
+rev = 0
 L0:
-t2 = x < 10
+t2 = x > 0
 IF NOT t2 GOTO L1
-PRINT x
-t3 = x + 1
-x = t3
+t3 = x % 10
+rem = t3
+t4 = rev * 10
+t5 = t4 + rem
+rev = t5
+t6 = x / 10
+x = t6
 GOTO L0
 L1:
+PRINT "Given number is "
+PRINT temp
+PRINT "Reverse of given number is "
+PRINT rev

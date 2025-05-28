@@ -1,7 +1,14 @@
 START
-READ x
-WHILE x <10 DO
-PRINT x
-x=x+1
-ENDWHILE 
+READ x 
+temp=x
+rev=0
+WHILE x>0 DO
+rem= x%10
+rev=rev*10+rem
+x=x/10
+ENDWHILE
+PRINT "Given number is "
+PRINT temp
+PRINT "Reverse of given number is "
+PRINT rev
 END

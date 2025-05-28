@@ -18,4 +18,4 @@ private:
     std::string evaluateConstantExpr(const std::string& left, const std::string& op, const std::string& right);
 };
 
-#endif // IR_OPTIMIZER_H
+#endif 

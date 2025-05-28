@@ -23,11 +23,11 @@ void IRGenerator::generateStatement(ASTNode* node) {
 
     } else if (node->type == "PrintStatement") {
         std::string value = generateExpression(node->children[0].get());
-        
-        // [Change 1] Handle string literals for PRINT
+
+        // Handle string literals for PRINT
         if (node->children[0]->type == "StringLiteral") {
             // If it's a string literal, print it with quotes
-            outFile << "PRINT " << "\"" << value << "\"" << "\n";  // Ensure quotes are included
+            outFile << "PRINT " << "\"" << value << "\"" << "\n"; 
         } else {
             // If it's not a string literal, print the computed expression or variable
             outFile << "PRINT " << value << "\n";
